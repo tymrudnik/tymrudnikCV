@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Contact Me</h4>
           <p>Gdańsk, Poland</p>
-          <p>+48 787 252 528</p>
+          <p></p>
         </div>
       </div>
     </footer>
