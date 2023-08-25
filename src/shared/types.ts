@@ -20,3 +20,15 @@ export interface ClassType {
   description?: string
   image: string
 }
+
+export interface ProjectType {
+  index: number
+  title: string
+  description: string
+  image: JSX.Element
+  keyskills: JSX.Element
+}
+
+export interface SelectedIndex {
+  index: number
+}

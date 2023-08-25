@@ -3,10 +3,10 @@ import { useEffect, useState } from "react"
 import { SelectedPage } from "@/shared/types"
 import Home from "@/scenes/home"
 import WorkExperience from "@/scenes/workexperience"
-// import Projects from "@/scenes/projects"
 import ContactMe from "@/scenes/contactMe"
 import Footer from "./scenes/footer"
 import AboutMe from "./scenes/aboutme"
+import Projects from "./scenes/projects"
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -34,9 +34,9 @@ function App() {
         setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage} />
-      {/**<OurClasses setSelectedPage={setSelectedPage} />*/}
       <WorkExperience setSelectedPage={setSelectedPage} />
       <AboutMe setSelectedPage={setSelectedPage} />
+      <Projects setSelectedPage={setSelectedPage} />
       <ContactMe setSelectedPage={setSelectedPage} />
       <Footer />
     </div>

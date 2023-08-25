@@ -15,18 +15,19 @@ type Props = {
 const WorkExperience = ({ setSelectedPage }: Props) => {
   const [showAll, setShowAll] = useState(false)
 
-  const renderedExperience = (showAll ? WorkExpArr: WorkExpArr.slice(0,3)).map((work:ExperienceType) => (
-        <Experience
-          key={work.company}
-          icon={work.icon}
-          url={work.url}
-          title={work.title}
-          description={work.description}
-          company={work.company}
-          dates={work.dates}
-        />
-      ))
-   
+  const renderedExperience = (
+    showAll ? WorkExpArr : WorkExpArr.slice(0, 3)
+  ).map((work: ExperienceType) => (
+    <Experience
+      key={work.company}
+      icon={work.icon}
+      url={work.url}
+      title={work.title}
+      description={work.description}
+      company={work.company}
+      dates={work.dates}
+    />
+  ))
 
   const handleExperienceButton: React.MouseEventHandler<
     HTMLButtonElement
