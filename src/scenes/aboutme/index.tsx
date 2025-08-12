@@ -22,6 +22,7 @@ const AboutMe = ({ setSelectedPage }: Props) => {
               className="mx-auto"
               alt="aboutme-page-graphic"
               src={AboutMeGraphic}
+              loading="lazy"
             />
             {/** DESCRIPTION */}
             <div>
