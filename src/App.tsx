@@ -24,7 +24,7 @@ function App() {
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  })
+  }, [])
 
   return (
     <div className="app bg-gray-20">
