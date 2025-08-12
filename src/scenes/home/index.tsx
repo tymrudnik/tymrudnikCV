@@ -88,25 +88,22 @@ const Home = ({ setSelectedPage }: Props) => {
       </motion.div>
       {/** SPONSORS */}
       {isAboveMediumScreens && (
-        <div className=" w-full bg-primary-100 py-10 flex-col justify-items-center">
-          <div className="flex justify-center">
-            <h1 className="basis-3/5 font-montserrat text-3xl font-bold text-center pb-10">
-              Core Programming Technologies
-            </h1>
-          </div>
-          <div className="flex justify-center ">
-            <div className="flex w-3/5 items-center justify-between gap-8">
-              <img alt="html-logo" src={HTMLLogo} />
-              <img alt="css-logo" src={CSSLogo} />
-              <img alt="javascript-logo" src={JSLogo} />
-              <img
-                className="h-[100px] w-[100px]"
-                alt="react-logo"
-                src={ReactLogo}
-              />
-              <img alt="tailwind-css-logo" src={TailwindLogo} />
-              <img alt="typescript-logo" src={TSLogo} />
-            </div>
+        <div className="w-full bg-primary-100 py-10 flex flex-col items-center">
+          <h1 className="basis-3/5 pb-10 text-center font-montserrat text-3xl font-bold">
+            Core Programming Technologies
+          </h1>
+          <div className="flex w-3/5 flex-wrap items-center justify-center gap-8">
+            <img alt="html-logo" src={HTMLLogo} loading="lazy" />
+            <img alt="css-logo" src={CSSLogo} loading="lazy" />
+            <img alt="javascript-logo" src={JSLogo} loading="lazy" />
+            <img
+              className="h-[100px] w-[100px]"
+              alt="react-logo"
+              src={ReactLogo}
+              loading="lazy"
+            />
+            <img alt="tailwind-css-logo" src={TailwindLogo} loading="lazy" />
+            <img alt="typescript-logo" src={TSLogo} loading="lazy" />
           </div>
         </div>
       )}
