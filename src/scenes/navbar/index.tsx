@@ -5,7 +5,7 @@ import LinkedInImage from "@/assets/LinkedIn.svg"
 import Link from "./Link"
 import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
-
+  const flexBetween = "flex items-center justify-between"
 type Props = {
   isTopOfPage: boolean
   selectedPage: SelectedPage
@@ -13,7 +13,7 @@ type Props = {
 }
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
-  const flexBetween = "flex items-center justify-between"
+
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false)
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
   const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow"
